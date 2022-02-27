@@ -1,15 +1,15 @@
 import React from 'react'
+import { MdShoppingBasket } from 'react-icons/md'
+function ShoppingCart({ qty = 0 }) {
+  return (
+    <>
+      <div className="carritoDeCompras">
+        <MdShoppingBasket className='cart' />
+        <div className="count-circle">{qty}</div>
+      </div>
+    </>
+  );
 
-function ShoppingCart() {
-    return (
-        <>
-            <div className="carritoDeCompras">
-              <i className="cart fas fa-shopping-basket"></i>
-              <div className="count-circle">0</div>
-            </div>
-        </>
-      );
-    
 }
 
 export default ShoppingCart
